@@ -1,0 +1,254 @@
+/* Will be compiled down to a single stylesheet with your sass files */
+
+body,html {
+  background: #07484b;
+  font-family: 'RobotoRegular', sans-serif;
+  color: #FFF;
+  font-size:30px;
+  height:100%;
+  width:100%;
+  margin: 0;
+  padding: 0;
+  overflow:hidden;
+  -webkit-transition: background .3s ease-in-out;
+  -moz-transition: background .3s ease-in-out;
+  -o-transition: background .3s ease-in-out;
+  transition: background .3s ease-in-out;
+}
+
+i.pull-right {
+  float: right;
+  padding-right:15px;
+}
+
+.app-screen {
+  width:80%;
+  height:100%;
+  margin:0 auto;
+  text-align: center;
+}
+
+.header {
+  width:100%;
+  height:100px;
+  /*border-bottom:1px solid rgba(255,255,255,0.2);*/
+  text-align: center;
+}
+
+.title-main {
+  font-size:30px;
+  font-family: 'RobotoBold';
+  margin-top:35px;
+  margin-bottom: 0;
+}
+
+.title-sub {
+  font-size:20px;
+  color: #052a2c;
+  margin-top:5px;
+}
+
+
+.well {
+  background: #052a2c;
+  color: #00987d;
+}
+
+.randoms-zone {
+  margin-top:50px;
+  margin-bottom:80px;
+}
+
+.centered {
+  text-align:center;
+}
+
+.random-circle {
+  margin: 0 auto;
+  padding:70px 60px 60px 60px;
+  display:block;
+  width:170px;
+  -webkit-border-radius: 300px;
+  -moz-border-radius: 300px;
+  -o-border-radius: 300px;
+  border-radius: 300px;
+  font-family: 'RobotoBlack';
+  font-size:140px;
+  border:15px solid #00987d;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.new-random-btn {
+  display:inline-block;
+  font-family: 'RobotoBlack';
+  font-size: 36px;
+  padding:10px 20px;
+  -webkit-border-radius: 300px;
+  -moz-border-radius: 300px;
+  -o-border-radius: 300px;
+  border-radius: 300px;
+  position:absolute;
+  margin-left:120px;
+  margin-top: -20px;
+  cursor:pointer;
+}
+
+.btn {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  cursor:pointer;
+  text-align: center;
+}
+
+.btn-primary {
+  background: #00987d;
+  color: #052a2c;
+  font-family: 'RobotoBlack';
+  padding: 20px 30px;
+}
+
+.btn-primary:hover {
+  background: #0AB092;
+}
+
+.btn-primary:active {
+  background: #24E6C3;
+}
+
+.btn-full {
+  display:block;
+  width:100%;
+  padding:30px 0;
+  max-width:600px;
+  margin: 0 auto;
+  clear:both;
+  font-size:36px;
+}
+
+.input-box {
+  margin:60px auto;
+  max-width:600px;
+  width:100%;
+  display:block;
+  height: 150px;
+}
+
+.inputter {
+  width:30%;
+  margin:0 1.66%;
+  height: 100%;
+  float:left;
+  position: relative;
+  text-align: center;
+}
+
+.inputter-label {
+  position:absolute;
+  bottom: 10px;
+  display:block;
+  width:100%;
+}
+
+
+.navigation-drawer {
+  position: fixed;
+  /*width:350px;*/
+  /*padding:0 35px 0 10px;*/
+  padding: 0;
+  /*padding-left: 10px;*/
+  height:100%;
+  background: #313131;
+  z-index:100;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+    -webkit-transform: translate3d(-400px,0,0);
+  -ms-transform: translate3d(-400px,0,0);
+  -moz-transform: translate3d(-400px,0,0);
+  -o-transform: translate3d(-400px,0,0);
+  transform: translate3d(-400px,0,0);
+}
+
+.navigation-drawer.open {
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -o-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.menu-btn {
+  position:absolute;
+  left: 20px;
+  top: 30px;
+  background: #052a2c;
+  padding:10px;
+  cursor:pointer;
+}
+
+.drawer-head {
+  display:block;
+  background: #212121;
+}
+
+.drawer-heading {
+  display: block;
+  font-size: 16px;
+  font-family: 'RobotoBold';
+  margin: 0;
+  padding: 20px;
+}
+
+.close-btn {
+  position:absolute;
+  right:10px;
+  top: 13px;
+  font-size:12px;
+  background: #373737;
+  border: none;
+  color: #FFF;
+  padding:10px;
+}
+
+.drawer-list {
+  list-style-type: none;
+  padding-left: 10px;
+  width:300px;
+  margin-top: 15px;
+}
+
+.drawer-item {
+  font-size:16px;
+  font-family: 'RobotoRegular';
+  /*font-family: 'RobotoLight';*/
+  width: 100%;
+  border-bottom: 1px solid #4C4747;
+}
+
+.drawer-item:last-child {
+  border-bottom: none;
+}
+
+.drawer-item a {
+  color: #C8C8C8;
+  text-decoration: none;
+  display:block;
+  padding:20px 0 20px 15px;
+  /*width:100%;*/
+}
+
+.drawer-item a.active {
+  color: #FFF;
+  background: #00987d;
+}
+
+.drawer-item a:hover {
+  color: #FFF;
+  background:#212121;
+}

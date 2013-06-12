@@ -1,0 +1,12 @@
+<p>There are {{shotsRemaining}} shots left.</p>
+
+<div class="randoms-zone">
+
+  <div class="callout small" ng-class="{firing: animating}">
+    <span>{{shotMessage}}</span>
+  </div>
+
+</div>
+
+<a class="btn btn-primary btn-full" ng-click="pullTrigger()" ng-hide="dead">Pull The Trigger</a>
+<a class="btn btn-primary btn-full" ng-click="init()" ng-show="dead">Reload</a>

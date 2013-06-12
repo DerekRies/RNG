@@ -1,0 +1,26 @@
+<div class="randoms-zone">
+
+  <a class="new-random-btn well" ng-click="addNumber()">+</a>
+
+  <div class="random-circle random-large well" ng-repeat="number in numbers">
+    {{number}}
+  </div>
+
+</div>
+
+<div class="input-box well">
+  <div class="inputter">
+    <h2>{{min}}</h2>
+    <label for="" class="inputter-label">Min</label>
+  </div>
+  <div class="inputter">
+    <h2>{{max}}</h2>
+    <label for="" class="inputter-label">Max</label>
+  </div>
+  <div class="inputter">
+    <h2>{{quantity}}</h2>
+    <label for="" class="inputter-label">Qty</label>
+  </div>
+</div>
+
+<a class="btn btn-primary btn-full" ng-click="randomNumber()">Random</a>
